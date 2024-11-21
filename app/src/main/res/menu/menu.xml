@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/dashboard"
+            android:icon="@drawable/dashboard"
+            android:title="@string/dashboard"/>
+        <item
+            android:id="@+id/console"
+            android:icon="@drawable/console"
+            android:title="@string/console"/>
+        <item
+            android:id="@+id/files"
+            android:icon="@drawable/files"
+            android:title="@string/files"/>
+        <item
+            android:id="@+id/history"
+            android:icon="@drawable/history"
+            android:title="@string/history"/>
+        <item
+            android:id="@+id/manage"
+            android:icon="@drawable/manage"
+            android:title="@string/manage"/>
+        <item
+            android:id="@+id/config"
+            android:icon="@drawable/config"
+            android:title="@string/config"/>
+        <item
+            android:id="@+id/system"
+            android:icon="@drawable/system"
+            android:title="@string/system"/>
+
+
+
+    </group>
+
+</menu>
