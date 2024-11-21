@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MobileF2Interface</string>
+    <string name="dashboard">Панель управления</string>
+    <string name="console">Консоль</string>
+    <string name="files">Файлы</string>
+    <string name="history">История задач</string>
+    <string name="manage">Управление</string>
+    <string name="config">Конфигурация</string>
+    <string name="system">Система</string>
+
 </resources>
