@@ -8,32 +8,39 @@
         <item
             android:id="@+id/dashboard"
             android:icon="@drawable/dashboard"
-            android:title="@string/dashboard"/>
+            android:title="@string/dashboard"
+            android:checked="true"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/console"
             android:icon="@drawable/console"
-            android:title="@string/console"/>
+            android:title="@string/console"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/files"
             android:icon="@drawable/files"
-            android:title="@string/files"/>
+            android:title="@string/files"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/history"
             android:icon="@drawable/history"
-            android:title="@string/history"/>
+            android:title="@string/history"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/manage"
             android:icon="@drawable/manage"
-            android:title="@string/manage"/>
+            android:title="@string/manage"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/config"
             android:icon="@drawable/config"
-            android:title="@string/config"/>
+            android:title="@string/config"
+            android:background="@drawable/nav_item_background"/>
         <item
             android:id="@+id/system"
             android:icon="@drawable/system"
-            android:title="@string/system"/>
-
+            android:title="@string/system"
+            android:background="@drawable/nav_item_background"/>
 
 
     </group>

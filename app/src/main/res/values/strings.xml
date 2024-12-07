@@ -7,5 +7,9 @@
     <string name="manage">Управление</string>
     <string name="config">Конфигурация</string>
     <string name="system">Система</string>
+    <string name="Open">Открыть</string>
+    <string name="Close">Закрыть</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

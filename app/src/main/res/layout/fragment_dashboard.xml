@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@color/white">
+
+
+            <!-- Первая рамка -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Камера"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/camera"
+                    />
+            </FrameLayout>
+
+            <!-- Вторая рамка -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Температуры"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Весь нагрев"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="215dp"
+                    android:textSize="11sp"
+                    android:textStyle="normal"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginStart="285dp"
+                    android:src="@drawable/myswitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="элемент"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="11sp"
+                    android:textColor="#666667"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extruder 0"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginStart="105dp"
+                    android:src="@drawable/myswitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Extruder 1"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="145dp"
+                    android:layout_marginStart="105dp"
+                    android:src="@drawable/myswitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heated Bed"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginStart="105dp"
+                    android:src="@drawable/myswitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chamber"
+                    android:layout_marginTop="235dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="235dp"
+                    android:layout_marginStart="105dp"
+                    android:src="@drawable/myswitch"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="вкл/выкл"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="100dp"
+                    android:textSize="11sp"
+                    android:textColor="#666667"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    температура\n      текущая °C"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="170dp"
+                    android:textSize="11sp"
+                    android:textColor="#666667"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="130"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginStart="200dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="230"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginStart="200dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  0"
+                    android:layout_marginTop="188dp"
+                    android:layout_marginStart="200dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 30"
+                    android:layout_marginTop="235dp"
+                    android:layout_marginStart="200dp"
+                    android:textSize="16sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="    температура\n     целевая °C"
+                    android:layout_marginTop="55dp"
+                    android:layout_marginStart="265dp"
+                    android:textSize="11sp"
+                    android:textColor="#666667"
+                    android:textStyle="normal"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="85dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="133dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="183dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="230dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Кнопка 2" />-->
+
+
+
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="График температур"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:scaleType="fitXY"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/grafik"
+                    />
+            </FrameLayout>
+
+            <!-- Третья рамка -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Консоль"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+                <EditText
+                    android:layout_width="215dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="240dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="text"/>
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="225dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawableLeft="@drawable/send"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:text="Отправить"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Кнопка 3" />-->
+
+<!--                <EditText-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Введите текст" />-->
+
+<!--                <ImageView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    />-->
+            </FrameLayout>
+
+            <!-- Четвертая рамка -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Экструдер"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+                <Spinner
+                    android:id="@+id/my_spinner"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="180dp"
+                    android:background="@drawable/rounded_spinner"
+
+                    android:padding="10dp"/>
+
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:cursorVisible="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:text="200" />
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="60dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:text="45"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="60dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:text="-30"
+                    android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="X"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Y"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="130dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Z"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginStart="250dp"
+                    android:textSize="13sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Длина экструзии"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Скорость экструзии"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="120dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="130dp"
+                    android:layout_marginTop="170dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Скорость"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginStart="210dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Поток"
+                    android:layout_marginTop="180dp"
+                    android:layout_marginStart="210dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="120dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+                <EditText
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="170dp"
+                    android:padding="8dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:focusableInTouchMode="true"
+                    android:cursorVisible="true"
+                    android:inputType="number"/>
+
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawableLeft="@drawable/down"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:text="Экструзия"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+                <Button
+                    android:layout_width="130dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="240dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawableLeft="@drawable/up"
+                    android:drawablePadding="8dp"
+                    android:padding="5dp"
+                    android:text="Ретракт"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp" />
+
+
+            </FrameLayout>
+
+            <!-- Пятая рамка -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+
+                android:background="@drawable/rounded_background"
+                android:padding="5dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Управление"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="normal"/>
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="280dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/home"
+                    android:padding="0dp"
+                    android:text="home all"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/home"
+                    android:padding="0dp"
+                    android:text="XY home"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/left"/>
+                <ImageButton
+                    android:layout_width="40dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="105dp"
+                    android:layout_marginStart="110dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/right"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="45dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/up"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="45dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/down"/>
+
+
+
+
+                <Button
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:drawableTop="@drawable/home"
+                    android:padding="0dp"
+                    android:text="Z home"
+                    android:textColor="@android:color/white"
+                    android:textSize="10sp" />
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginStart="190dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/up"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="190dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/down"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginStart="270dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/up"/>
+                <ImageButton
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginStart="270dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:src="@drawable/down"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Babystep 0.05"
+                    android:layout_marginTop="132dp"
+                    android:layout_marginStart="260dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Экструдер"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginStart="70dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="10"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="25"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="120dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="50"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="155dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="100"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Калибровка Babystep"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginStart="210dp"
+                    android:textSize="12sp"
+                    android:textStyle="normal"/>
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="205dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="0.05"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="0.025"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="295dp"
+                    android:layout_marginTop="255dp"
+                    android:background="@drawable/roundedbuttonbackground"
+                    android:drawablePadding="8dp"
+                    android:padding="0dp"
+                    android:text="0.01"
+                    android:textColor="@android:color/white"
+                    android:textSize="13sp" />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
